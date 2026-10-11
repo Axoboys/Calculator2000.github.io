@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifou - Cookie Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Section d'authentification -->
+    <div id="auth-section">
+        <h2>Connexion</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Mot de passe">
+        <button onclick="login()">Se connecter</button>
+        <button onclick="register()">S'inscrire</button>
+    </div>
+
+    <!-- Interface utilisateur -->
+    <div id="user-interface" style="display:none;">
+        <h1>Cookie Calculator - Fifou</h1>
+        
+        <!-- Section des items -->
+        <section id="items-section">
+            <h2>Liste des Items</h2>
+            <table id="item-table"></table>
+        </section>
+
+        <!-- Calculateur -->
+        <section id="calculator-section">
+            <h2>Calculateur de Montant</h2>
+            <input type="number" id="target-amount" placeholder="Montant cible">
+            <button onclick="calculateItems()">Calculer</button>
+            <div id="results"></div>
+        </section>
+
+        <!-- Classement -->
+        <section id="ranking-section">
+            <h2>Classement des Items (Rentabilité)</h2>
+            <table id="ranking-table"></table>
+        </section>
+    </div>
+
+    <!-- Interface admin -->
+    <div id="admin-interface" style="display:none;">
+        <h2>Interface Admin - Fifou</h2>
+        <input type="password" id="admin-code" placeholder="Code d'administration">
+        <button onclick="accessAdmin()">Accéder à l'admin</button>
+        
+        <!-- Modification des prix -->
+        <div id="price-editor">
+            <h3>Modifier les Prix</h3>
+            <table id="edit-table"></table>
+            <button onclick="saveChanges()">Sauvegarder les modifications</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

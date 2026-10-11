@@ -1,0 +1,46 @@
+/* Design cookie-themed */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fff8e1;
+    margin: 0;
+    padding: 20px;
+}
+
+.cookie-theme {
+    border: 2px solid #d7ad3b;
+    border-radius: 15px;
+    background-color: #ffebcd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+h1, h2, h3 {
+    color: #d7ad3b;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #d7ad3b;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #d7ad3b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #c49a2d;
+}
